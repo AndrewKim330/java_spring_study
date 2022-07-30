@@ -8,7 +8,8 @@ public class EmployeeTest {
 
         Employee employeeKim = new Employee();
         employeeKim.setEmployeeName("Kim");
-        System.out.println(employeeKim.serialNum);
+//        System.out.println(employeeKim.serialNum);
+        System.out.println(Employee.getSerialNum());
 
         Employee employeeLee = new Employee();
         employeeLee.setEmployeeName("Lee");
