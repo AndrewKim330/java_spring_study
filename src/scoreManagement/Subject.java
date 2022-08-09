@@ -9,10 +9,10 @@ public class Subject {
     private int subjectScore;
     ArrayList<Integer> subjectList = new ArrayList<>();
 
-    public Array getSubject() {
-
-        return
-    }
+//    public Array getSubject() {
+//
+//        return
+//    }
 
     public void setSubjectList(ArrayList<Integer> subjectList) {
         this.subjectList = subjectList;

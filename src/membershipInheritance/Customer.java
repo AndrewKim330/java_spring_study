@@ -48,7 +48,7 @@ public class Customer {
 
     public int calcPrice(int price) {
         bonusPoint += price * bonusRatio;
-        return bonusPoint;
+        return price;
     }
 
     public String showCustomerInfo() {
