@@ -1,4 +1,4 @@
-package membership;
+package membershipOverriding;
 
 public class Customer {
     private int customerId;
@@ -9,9 +9,10 @@ public class Customer {
     int bonusPoint;
     double bonusRatio;
 
-    public Customer() {
-        customerGrade = "SILVER";
-        bonusRatio = 0.01;
+    public Customer(int customerId, String customerName) {
+        this.customerId = customerId;
+        this.customerName = customerName;
+//        System.out.println("call Customer(int, String)");
     }
 
     public int getCustomerId() {
