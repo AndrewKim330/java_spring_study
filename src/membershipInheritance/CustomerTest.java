@@ -17,9 +17,5 @@ public class CustomerTest {
 
         // upCasting
         Customer vc = new VIPCustomer(12345,"noName");
-<<<<<<< HEAD
-        vc.
-=======
->>>>>>> ce3b314 (feat: Construct class for making membership management program with class inheritance)
     }
 }
