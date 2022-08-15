@@ -1,4 +1,4 @@
-package interfaceExample;
+package calculatorInterfaceExample;
 
 public abstract class Calculator implements Calc{
     @Override

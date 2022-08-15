@@ -1,4 +1,4 @@
-package interfaceExample;
+package calculatorInterfaceExample;
 
 public class CalcTest {
     public static void main(String[] args) {

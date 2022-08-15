@@ -1,4 +1,4 @@
-package interfaceExample;
+package calculatorInterfaceExample;
 
 public class CompleteCalc extends Calculator{
     @Override
