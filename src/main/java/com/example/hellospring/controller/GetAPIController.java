@@ -1,6 +1,9 @@
 package com.example.hellospring.controller;
 
+import com.example.hellospring.dto.UserRequest;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/get")
@@ -28,6 +31,40 @@ public class GetAPIController {
     }
 
     // query parameter
+    @GetMapping(path="query-param")
+    public String queryParam(@RequestParam Map<String, String> queryParam){
+        StringBuilder sb = new StringBuilder();
 
+        queryParam.entrySet().forEach(entry -> {
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+            System.out.println("\n");
+            sb.append(entry.getKey() + " = " + entry.getValue() + "\n");
+        });
+        return sb.toString();
+    }
 
+    // (knowing) explicit key
+    @GetMapping(path="query-param2")
+    public String queryParam2(
+            @RequestParam String name,
+            @RequestParam String email,
+            @RequestParam int age
+    ) {
+
+        System.out.println(name);
+        System.out.println(email);
+        System.out.println(age);
+
+        return name + " " + email + " " + age;
+    }
+
+    @GetMapping(path="query-param3")
+    public String queryParam3(UserRequest userRequest){
+        System.out.println(userRequest.getName());
+        System.out.println(userRequest.getEmail());
+        System.out.println(userRequest.getAge());
+
+        return userRequest.toString();
+    }
 }
